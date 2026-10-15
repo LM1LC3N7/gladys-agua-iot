@@ -1,0 +1,726 @@
+{
+  "source": "vincentwolsink/home_assistant_micronova_agua_iot, fixtures/nordic_fire_boiler.json (Apache-2.0), trimmed",
+  "stove": {
+    "id": 3102,
+    "id_device": "NF5F6A7B8C9D",
+    "id_product": "P-NF-12",
+    "product_serial": "NF-1905-1188",
+    "name": "Chaudière",
+    "name_product": "Nordic Fire Hydro 24",
+    "id_registers_map": 12,
+    "is_online": true
+  },
+  "registers": [
+    {
+      "reg_key": "alarms_enable",
+      "reg_name": "Allarmi Enable",
+      "reg_name_app": "Allarmi Enable",
+      "reg_key_group": "alarms",
+      "reg_type": "ENABLE",
+      "offset": 33,
+      "eeprom": false,
+      "is_word": false,
+      "big_endian": false,
+      "formula": "#",
+      "formula_inverse": "#",
+      "format_string": "{0}",
+      "set_min": 0,
+      "set_max": 255,
+      "readonly": false,
+      "mask": 65535,
+      "is_hex": false,
+      "is_temperature": false,
+      "use_app": true,
+      "display_dashboard": false,
+      "display_manage": false,
+      "display_info": false,
+      "step": 1,
+      "with_sign": false,
+      "from_char_code": false,
+      "enable_val": [
+        {
+          "value": 8
+        },
+        {
+          "value": 9
+        }
+      ]
+    },
+    {
+      "reg_key": "alarms_get",
+      "reg_name": "Allarmi",
+      "reg_name_app": "Allarmi",
+      "reg_key_group": "alarms",
+      "reg_type": "GET",
+      "offset": 51,
+      "eeprom": false,
+      "is_word": false,
+      "big_endian": false,
+      "formula": "#",
+      "formula_inverse": "#",
+      "format_string": "{0}",
+      "set_min": 0,
+      "set_max": 255,
+      "readonly": false,
+      "mask": 65535,
+      "is_hex": false,
+      "is_temperature": false,
+      "use_app": true,
+      "display_dashboard": false,
+      "display_manage": false,
+      "display_info": false,
+      "step": 1,
+      "with_sign": false,
+      "from_char_code": false,
+      "enc_val": [
+        {
+          "value": 1,
+          "lang": "ENG",
+          "description": "AL 02"
+        },
+        {
+          "value": 1,
+          "lang": "FRE",
+          "description": "AL 02"
+        },
+        {
+          "value": 2,
+          "lang": "ENG",
+          "description": "AL 03"
+        },
+        {
+          "value": 2,
+          "lang": "FRE",
+          "description": "AL 03"
+        },
+        {
+          "value": 4,
+          "lang": "ENG",
+          "description": "AL 04"
+        },
+        {
+          "value": 4,
+          "lang": "FRE",
+          "description": "AL 04"
+        },
+        {
+          "value": 8,
+          "lang": "ENG",
+          "description": "AL 05"
+        },
+        {
+          "value": 8,
+          "lang": "FRE",
+          "description": "AL 05"
+        },
+        {
+          "value": 16,
+          "lang": "ENG",
+          "description": "AL 06"
+        },
+        {
+          "value": 16,
+          "lang": "FRE",
+          "description": "AL 06"
+        },
+        {
+          "value": 32,
+          "lang": "ENG",
+          "description": "AL 08"
+        },
+        {
+          "value": 32,
+          "lang": "FRE",
+          "description": "AL 08"
+        },
+        {
+          "value": 64,
+          "lang": "ENG",
+          "description": "--------"
+        },
+        {
+          "value": 64,
+          "lang": "FRE",
+          "description": "--------"
+        },
+        {
+          "value": 96,
+          "lang": "ENG",
+          "description": "AL 07"
+        },
+        {
+          "value": 96,
+          "lang": "FRE",
+          "description": "AL 07"
+        },
+        {
+          "value": 128,
+          "lang": "ENG",
+          "description": "--------"
+        },
+        {
+          "value": 128,
+          "lang": "FRE",
+          "description": "--------"
+        },
+        {
+          "value": 132,
+          "lang": "ENG",
+          "description": "AL 10"
+        },
+        {
+          "value": 132,
+          "lang": "FRE",
+          "description": "AL 10"
+        },
+        {
+          "value": 143,
+          "lang": "ENG",
+          "description": "AL 12"
+        },
+        {
+          "value": 143,
+          "lang": "FRE",
+          "description": "AL 12"
+        },
+        {
+          "value": 144,
+          "lang": "ENG",
+          "description": "AL 11"
+        },
+        {
+          "value": 144,
+          "lang": "FRE",
+          "description": "AL 11"
+        },
+        {
+          "value": 255,
+          "lang": "ENG",
+          "description": "AL 01"
+        },
+        {
+          "value": 255,
+          "lang": "FRE",
+          "description": "AL 01"
+        }
+      ]
+    },
+    {
+      "reg_key": "power_set",
+      "reg_name": "Set Potenza",
+      "reg_name_app": "Potenza",
+      "reg_key_group": "power",
+      "reg_type": "SET",
+      "offset": 32895,
+      "eeprom": true,
+      "is_word": false,
+      "big_endian": false,
+      "formula": "#",
+      "formula_inverse": "#",
+      "format_string": "{0}",
+      "set_min": 1,
+      "set_max": 5,
+      "readonly": false,
+      "mask": 255,
+      "is_hex": false,
+      "is_temperature": false,
+      "use_app": true,
+      "display_dashboard": false,
+      "display_manage": true,
+      "display_info": false,
+      "step": 1,
+      "with_sign": false,
+      "from_char_code": false
+    },
+    {
+      "reg_key": "real_power_get",
+      "reg_name": "Potenza Reale",
+      "reg_name_app": "Potenza reale",
+      "reg_key_group": "real_power",
+      "reg_type": "GET",
+      "offset": 52,
+      "eeprom": false,
+      "is_word": false,
+      "big_endian": false,
+      "formula": "#",
+      "formula_inverse": "#",
+      "format_string": "{0}",
+      "set_min": 0,
+      "set_max": 255,
+      "readonly": false,
+      "mask": 65535,
+      "is_hex": false,
+      "is_temperature": false,
+      "use_app": true,
+      "display_dashboard": true,
+      "display_manage": false,
+      "display_info": false,
+      "step": 1,
+      "with_sign": false,
+      "from_char_code": false
+    },
+    {
+      "reg_key": "status_get",
+      "reg_name": "Stato",
+      "reg_name_app": "Stato",
+      "reg_key_group": "status",
+      "reg_type": "GET",
+      "offset": 33,
+      "eeprom": false,
+      "is_word": false,
+      "big_endian": false,
+      "formula": "#",
+      "formula_inverse": "#",
+      "format_string": "{0}",
+      "set_min": 0,
+      "set_max": 255,
+      "readonly": false,
+      "mask": 65535,
+      "is_hex": false,
+      "is_temperature": false,
+      "use_app": true,
+      "display_dashboard": false,
+      "display_manage": false,
+      "display_info": false,
+      "step": 1,
+      "with_sign": false,
+      "from_char_code": false,
+      "enc_val": [
+        {
+          "value": 0,
+          "lang": "ENG",
+          "description": "OFF"
+        },
+        {
+          "value": 0,
+          "lang": "FRE",
+          "description": "ETEINT"
+        },
+        {
+          "value": 1,
+          "lang": "ENG",
+          "description": "CHECK UP"
+        },
+        {
+          "value": 1,
+          "lang": "FRE",
+          "description": "CHECK UP"
+        },
+        {
+          "value": 2,
+          "lang": "ENG",
+          "description": "LOAD PELLET"
+        },
+        {
+          "value": 2,
+          "lang": "FRE",
+          "description": "CHARGE PELLET"
+        },
+        {
+          "value": 3,
+          "lang": "ENG",
+          "description": "FLAME LIGHT"
+        },
+        {
+          "value": 3,
+          "lang": "FRE",
+          "description": "FLAMME LUMIERE"
+        },
+        {
+          "value": 4,
+          "lang": "ENG",
+          "description": "WORK"
+        },
+        {
+          "value": 4,
+          "lang": "FRE",
+          "description": "TRAVAIL"
+        },
+        {
+          "value": 5,
+          "lang": "ENG",
+          "description": "CLEANING"
+        },
+        {
+          "value": 5,
+          "lang": "FRE",
+          "description": "NETTOYAGE"
+        },
+        {
+          "value": 6,
+          "lang": "ENG",
+          "description": "FINAL CLEANING"
+        },
+        {
+          "value": 6,
+          "lang": "FRE",
+          "description": "NETTOYAGE FINAL"
+        },
+        {
+          "value": 7,
+          "lang": "ENG",
+          "description": "STAND-BY"
+        },
+        {
+          "value": 7,
+          "lang": "FRE",
+          "description": "STAND-BY"
+        },
+        {
+          "value": 8,
+          "lang": "ENG",
+          "description": "ALARM"
+        },
+        {
+          "value": 8,
+          "lang": "FRE",
+          "description": "ALARME"
+        },
+        {
+          "value": 9,
+          "lang": "ENG",
+          "description": "ALARM"
+        },
+        {
+          "value": 9,
+          "lang": "FRE",
+          "description": "ALARME"
+        }
+      ]
+    },
+    {
+      "reg_key": "status_managed_get",
+      "reg_name": "Stato Gestito",
+      "reg_name_app": "Stato Gestito",
+      "reg_key_group": "status_managed",
+      "reg_type": "GET",
+      "offset": 232,
+      "eeprom": false,
+      "is_word": false,
+      "big_endian": false,
+      "formula": "#",
+      "formula_inverse": "#",
+      "format_string": "{0}",
+      "set_min": 0,
+      "set_max": 255,
+      "readonly": false,
+      "mask": 65535,
+      "is_hex": false,
+      "is_temperature": false,
+      "use_app": true,
+      "display_dashboard": false,
+      "display_manage": false,
+      "display_info": false,
+      "step": 1,
+      "with_sign": false,
+      "from_char_code": false,
+      "enc_val": [
+        {
+          "value": 85,
+          "lang": "ENG",
+          "description": "ON"
+        },
+        {
+          "value": 85,
+          "lang": "FRE",
+          "description": "ON"
+        },
+        {
+          "value": 170,
+          "lang": "ENG",
+          "description": "OFF"
+        },
+        {
+          "value": 170,
+          "lang": "FRE",
+          "description": "OFF"
+        }
+      ]
+    },
+    {
+      "reg_key": "temp_water_boiler_enable",
+      "reg_name": "Abilitazione Temperatura Boiler",
+      "reg_name_app": "Temp. Boiler Set",
+      "reg_key_group": "temp_water_boiler",
+      "reg_type": "ENABLE",
+      "offset": 32828,
+      "eeprom": true,
+      "is_word": false,
+      "big_endian": false,
+      "formula": "#",
+      "formula_inverse": "#",
+      "format_string": "{0}",
+      "set_min": 0,
+      "set_max": 3,
+      "readonly": false,
+      "mask": 255,
+      "is_hex": false,
+      "is_temperature": false,
+      "use_app": true,
+      "display_dashboard": false,
+      "display_manage": false,
+      "display_info": false,
+      "step": 1,
+      "with_sign": false,
+      "from_char_code": false,
+      "enable_val": [
+        {
+          "value": 2
+        }
+      ]
+    },
+    {
+      "reg_key": "temp_water_boiler_get",
+      "reg_name": "Temperatura Boiler",
+      "reg_name_app": "Temp. boiler",
+      "reg_key_group": "temp_water_boiler",
+      "reg_type": "GET",
+      "offset": 74,
+      "eeprom": false,
+      "is_word": false,
+      "big_endian": false,
+      "formula": "#/2",
+      "formula_inverse": "#*2",
+      "format_string": "{0} °C",
+      "set_min": 0,
+      "set_max": 255,
+      "readonly": false,
+      "mask": 255,
+      "is_hex": false,
+      "is_temperature": false,
+      "use_app": true,
+      "display_dashboard": true,
+      "display_manage": false,
+      "display_info": false,
+      "step": 1,
+      "with_sign": false,
+      "from_char_code": false
+    },
+    {
+      "reg_key": "temp_water_boiler_set",
+      "reg_name": "Set Temperatura Boiler",
+      "reg_name_app": "Temp. Boiler Set",
+      "reg_key_group": "temp_water_boiler",
+      "reg_type": "SET",
+      "offset": 32897,
+      "eeprom": true,
+      "is_word": false,
+      "big_endian": false,
+      "formula": "#",
+      "formula_inverse": "#",
+      "format_string": "{0} °C",
+      "set_min": 45,
+      "set_max": 70,
+      "readonly": false,
+      "mask": 255,
+      "is_hex": false,
+      "is_temperature": false,
+      "use_app": true,
+      "display_dashboard": false,
+      "display_manage": true,
+      "display_info": false,
+      "step": 1,
+      "with_sign": false,
+      "from_char_code": false
+    },
+    {
+      "reg_key": "temp_water_enable",
+      "reg_name": "Abilitazione Temperatura Acqua (Caldaia)",
+      "reg_name_app": "Temp. Acqua",
+      "reg_key_group": "temp_water",
+      "reg_type": "ENABLE",
+      "offset": 32828,
+      "eeprom": true,
+      "is_word": false,
+      "big_endian": false,
+      "formula": "#",
+      "formula_inverse": "#",
+      "format_string": "{0}",
+      "set_min": 0,
+      "set_max": 3,
+      "readonly": false,
+      "mask": 255,
+      "is_hex": false,
+      "is_temperature": false,
+      "use_app": true,
+      "display_dashboard": false,
+      "display_manage": false,
+      "display_info": false,
+      "step": 1,
+      "with_sign": false,
+      "from_char_code": false,
+      "enable_val": [
+        {
+          "value": 0
+        },
+        {
+          "value": 1
+        },
+        {
+          "value": 2
+        }
+      ]
+    },
+    {
+      "reg_key": "temp_water_get",
+      "reg_name": "Temperatura Acqua (Caldaia)",
+      "reg_name_app": "Temp. acqua",
+      "reg_key_group": "temp_water",
+      "reg_type": "GET",
+      "offset": 3,
+      "eeprom": false,
+      "is_word": false,
+      "big_endian": false,
+      "formula": "#",
+      "formula_inverse": "#",
+      "format_string": "{0}",
+      "set_min": 0,
+      "set_max": 255,
+      "readonly": false,
+      "mask": 255,
+      "is_hex": false,
+      "is_temperature": false,
+      "use_app": true,
+      "display_dashboard": true,
+      "display_manage": false,
+      "display_info": false,
+      "step": 1,
+      "with_sign": false,
+      "from_char_code": false
+    },
+    {
+      "reg_key": "temp_water_puffer_enable",
+      "reg_name": "Abilitazione Temperatura Puffer",
+      "reg_name_app": "Temp. Puffer Set",
+      "reg_key_group": "temp_water_puffer",
+      "reg_type": "ENABLE",
+      "offset": 32828,
+      "eeprom": true,
+      "is_word": false,
+      "big_endian": false,
+      "formula": "#",
+      "formula_inverse": "#",
+      "format_string": "{0}",
+      "set_min": 0,
+      "set_max": 3,
+      "readonly": false,
+      "mask": 255,
+      "is_hex": false,
+      "is_temperature": false,
+      "use_app": true,
+      "display_dashboard": false,
+      "display_manage": false,
+      "display_info": false,
+      "step": 1,
+      "with_sign": false,
+      "from_char_code": false,
+      "enable_val": [
+        {
+          "value": 3
+        }
+      ]
+    },
+    {
+      "reg_key": "temp_water_puffer_get",
+      "reg_name": "Temperatura Puffer",
+      "reg_name_app": "Temp. puffer",
+      "reg_key_group": "temp_water_puffer",
+      "reg_type": "GET",
+      "offset": 74,
+      "eeprom": false,
+      "is_word": false,
+      "big_endian": false,
+      "formula": "#/2",
+      "formula_inverse": "#*2",
+      "format_string": "{0}",
+      "set_min": 45,
+      "set_max": 70,
+      "readonly": false,
+      "mask": 255,
+      "is_hex": false,
+      "is_temperature": false,
+      "use_app": true,
+      "display_dashboard": true,
+      "display_manage": false,
+      "display_info": false,
+      "step": 1,
+      "with_sign": false,
+      "from_char_code": false
+    },
+    {
+      "reg_key": "temp_water_puffer_set",
+      "reg_name": "Set Temperatura Puffer",
+      "reg_name_app": "Temp. Puffer Set",
+      "reg_key_group": "temp_water_puffer",
+      "reg_type": "SET",
+      "offset": 32899,
+      "eeprom": true,
+      "is_word": false,
+      "big_endian": false,
+      "formula": "#",
+      "formula_inverse": "#",
+      "format_string": "{0}",
+      "set_min": 40,
+      "set_max": 75,
+      "readonly": false,
+      "mask": 255,
+      "is_hex": false,
+      "is_temperature": false,
+      "use_app": true,
+      "display_dashboard": false,
+      "display_manage": true,
+      "display_info": false,
+      "step": 1,
+      "with_sign": false,
+      "from_char_code": false
+    },
+    {
+      "reg_key": "temp_water_set",
+      "reg_name": "Temperatura Acqua Set (Caldaia)",
+      "reg_name_app": "Temp. acqua",
+      "reg_key_group": "temp_water",
+      "reg_type": "SET",
+      "offset": 32896,
+      "eeprom": true,
+      "is_word": false,
+      "big_endian": false,
+      "formula": "#",
+      "formula_inverse": "#",
+      "format_string": "{0}",
+      "set_min": 55,
+      "set_max": 80,
+      "readonly": false,
+      "mask": 255,
+      "is_hex": false,
+      "is_temperature": false,
+      "use_app": true,
+      "display_dashboard": false,
+      "display_manage": true,
+      "display_info": false,
+      "step": 1,
+      "with_sign": false,
+      "from_char_code": false
+    }
+  ],
+  "buffer": {
+    "Items": [3, 33, 51, 52, 74, 232, 32828, 32895, 32896, 32897, 32899],
+    "Values": [21, 0, 0, 0, 39, 0, 3, 5, 65, 60, 65]
+  },
+  "expected": {
+    "alarms_enable": 0,
+    "alarms_get": 0,
+    "power_set": 5,
+    "real_power_get": 0,
+    "status_get": 0,
+    "status_managed_get": 0,
+    "temp_water_boiler_enable": 3,
+    "temp_water_boiler_get": 19.5,
+    "temp_water_boiler_set": 60,
+    "temp_water_enable": 3,
+    "temp_water_get": 21,
+    "temp_water_puffer_enable": 3,
+    "temp_water_puffer_get": 19.5,
+    "temp_water_puffer_set": 65,
+    "temp_water_set": 65
+  }
+}

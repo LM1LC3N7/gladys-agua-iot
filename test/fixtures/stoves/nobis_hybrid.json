@@ -1,0 +1,1025 @@
+{
+  "source": "vincentwolsink/home_assistant_micronova_agua_iot, fixtures/nobis_hybrid.json (Apache-2.0), trimmed",
+  "stove": {
+    "id": 3104,
+    "id_device": "NB44556677BB",
+    "id_product": "P-NB-02",
+    "product_serial": "NB-2111-0303",
+    "name": "Hybride",
+    "name_product": "Nobis Hybrid",
+    "id_registers_map": 2,
+    "is_online": true
+  },
+  "registers": [
+    {
+      "reg_key": "alarms_enable",
+      "reg_name": "Allarmi Enable",
+      "reg_name_app": "Allarmi Enable",
+      "reg_key_group": "alarms",
+      "reg_type": "ENABLE",
+      "offset": 8,
+      "eeprom": false,
+      "is_word": false,
+      "big_endian": false,
+      "formula": "#",
+      "formula_inverse": "#",
+      "format_string": "{0}",
+      "set_min": 0,
+      "set_max": 255,
+      "readonly": false,
+      "mask": 255,
+      "is_hex": false,
+      "is_temperature": false,
+      "use_app": true,
+      "display_dashboard": false,
+      "display_manage": false,
+      "display_info": false,
+      "step": 1,
+      "with_sign": false,
+      "from_char_code": false,
+      "enable_val": [
+        {
+          "value": 10
+        },
+        {
+          "value": 11
+        }
+      ]
+    },
+    {
+      "reg_key": "alarms_get",
+      "reg_name": "Allarmi",
+      "reg_name_app": "Allarmi",
+      "reg_key_group": "alarms",
+      "reg_type": "GET",
+      "offset": 34,
+      "eeprom": false,
+      "is_word": false,
+      "big_endian": false,
+      "formula": "#",
+      "formula_inverse": "#",
+      "format_string": "{0}",
+      "set_min": 0,
+      "set_max": 255,
+      "readonly": false,
+      "mask": 255,
+      "is_hex": false,
+      "is_temperature": false,
+      "use_app": true,
+      "display_dashboard": true,
+      "display_manage": false,
+      "display_info": false,
+      "step": 1,
+      "with_sign": false,
+      "from_char_code": false,
+      "enc_val": [
+        {
+          "value": 0,
+          "lang": "ENG",
+          "description": "____"
+        },
+        {
+          "value": 0,
+          "lang": "FRE",
+          "description": "____"
+        },
+        {
+          "value": 1,
+          "lang": "ENG",
+          "description": "AL01"
+        },
+        {
+          "value": 1,
+          "lang": "FRE",
+          "description": "AL01"
+        },
+        {
+          "value": 2,
+          "lang": "ENG",
+          "description": "AL02"
+        },
+        {
+          "value": 2,
+          "lang": "FRE",
+          "description": "AL02"
+        },
+        {
+          "value": 3,
+          "lang": "ENG",
+          "description": "AL03"
+        },
+        {
+          "value": 3,
+          "lang": "FRE",
+          "description": "AL03"
+        },
+        {
+          "value": 4,
+          "lang": "ENG",
+          "description": "AL04"
+        },
+        {
+          "value": 4,
+          "lang": "FRE",
+          "description": "AL04"
+        },
+        {
+          "value": 5,
+          "lang": "ENG",
+          "description": "AL05"
+        },
+        {
+          "value": 5,
+          "lang": "FRE",
+          "description": "AL05"
+        },
+        {
+          "value": 6,
+          "lang": "ENG",
+          "description": "AL06"
+        },
+        {
+          "value": 6,
+          "lang": "FRE",
+          "description": "AL06"
+        },
+        {
+          "value": 7,
+          "lang": "ENG",
+          "description": "AL07"
+        },
+        {
+          "value": 7,
+          "lang": "FRE",
+          "description": "AL07"
+        },
+        {
+          "value": 8,
+          "lang": "ENG",
+          "description": "AL08"
+        },
+        {
+          "value": 8,
+          "lang": "FRE",
+          "description": "AL08"
+        },
+        {
+          "value": 9,
+          "lang": "ENG",
+          "description": "AL09"
+        },
+        {
+          "value": 9,
+          "lang": "FRE",
+          "description": "AL09"
+        },
+        {
+          "value": 10,
+          "lang": "ENG",
+          "description": "AL10"
+        },
+        {
+          "value": 10,
+          "lang": "FRE",
+          "description": "AL10"
+        },
+        {
+          "value": 11,
+          "lang": "ENG",
+          "description": "AL11"
+        },
+        {
+          "value": 11,
+          "lang": "FRE",
+          "description": "AL11"
+        },
+        {
+          "value": 12,
+          "lang": "ENG",
+          "description": "AL12"
+        },
+        {
+          "value": 12,
+          "lang": "FRE",
+          "description": "AL12"
+        },
+        {
+          "value": 13,
+          "lang": "ENG",
+          "description": "AL13"
+        },
+        {
+          "value": 13,
+          "lang": "FRE",
+          "description": "AL13"
+        },
+        {
+          "value": 14,
+          "lang": "ENG",
+          "description": "AL14"
+        },
+        {
+          "value": 14,
+          "lang": "FRE",
+          "description": "AL14"
+        },
+        {
+          "value": 15,
+          "lang": "ENG",
+          "description": "AL15"
+        },
+        {
+          "value": 15,
+          "lang": "FRE",
+          "description": "AL15"
+        },
+        {
+          "value": 16,
+          "lang": "ENG",
+          "description": "AL16"
+        },
+        {
+          "value": 16,
+          "lang": "FRE",
+          "description": "AL16"
+        },
+        {
+          "value": 17,
+          "lang": "ENG",
+          "description": "AL17"
+        },
+        {
+          "value": 17,
+          "lang": "FRE",
+          "description": "AL17"
+        },
+        {
+          "value": 18,
+          "lang": "ENG",
+          "description": "AL18"
+        },
+        {
+          "value": 18,
+          "lang": "FRE",
+          "description": "AL18"
+        },
+        {
+          "value": 22,
+          "lang": "ENG",
+          "description": "AL22"
+        },
+        {
+          "value": 22,
+          "lang": "FRE",
+          "description": "AL22"
+        },
+        {
+          "value": 23,
+          "lang": "ENG",
+          "description": "AL23"
+        },
+        {
+          "value": 23,
+          "lang": "FRE",
+          "description": "AL23"
+        },
+        {
+          "value": 24,
+          "lang": "ENG",
+          "description": "AL24"
+        },
+        {
+          "value": 24,
+          "lang": "FRE",
+          "description": "AL24"
+        },
+        {
+          "value": 28,
+          "lang": "ENG",
+          "description": "AL28"
+        },
+        {
+          "value": 28,
+          "lang": "FRE",
+          "description": "AL28"
+        },
+        {
+          "value": 29,
+          "lang": "ENG",
+          "description": "AL29"
+        },
+        {
+          "value": 29,
+          "lang": "FRE",
+          "description": "AL29"
+        },
+        {
+          "value": 30,
+          "lang": "ENG",
+          "description": "AL30"
+        },
+        {
+          "value": 30,
+          "lang": "FRE",
+          "description": "AL30"
+        },
+        {
+          "value": 31,
+          "lang": "ENG",
+          "description": "AL31"
+        },
+        {
+          "value": 31,
+          "lang": "FRE",
+          "description": "AL31"
+        },
+        {
+          "value": 32,
+          "lang": "ENG",
+          "description": "AL32"
+        },
+        {
+          "value": 32,
+          "lang": "FRE",
+          "description": "AL32"
+        }
+      ]
+    },
+    {
+      "reg_key": "power_enable",
+      "reg_name": "Abilitazione Set Potenza Enable",
+      "reg_name_app": "Potenza enable",
+      "reg_key_group": "power",
+      "reg_type": "ENABLE",
+      "offset": 107,
+      "eeprom": false,
+      "is_word": true,
+      "big_endian": false,
+      "formula": "#",
+      "formula_inverse": "#",
+      "format_string": "{0}",
+      "set_min": 0,
+      "set_max": 1,
+      "readonly": false,
+      "mask": 1,
+      "is_hex": false,
+      "is_temperature": false,
+      "use_app": true,
+      "display_dashboard": false,
+      "display_manage": false,
+      "display_info": false,
+      "step": 1,
+      "with_sign": false,
+      "from_char_code": false
+    },
+    {
+      "reg_key": "power_set",
+      "reg_name": "Set Potenza",
+      "reg_name_app": "Potenza",
+      "reg_key_group": "power",
+      "reg_type": "SET",
+      "offset": 33120,
+      "eeprom": true,
+      "is_word": true,
+      "big_endian": false,
+      "formula": "#",
+      "formula_inverse": "#",
+      "format_string": "{0}",
+      "set_min": 1,
+      "set_max": 7,
+      "readonly": false,
+      "mask": 65535,
+      "is_hex": false,
+      "is_temperature": false,
+      "use_app": true,
+      "display_dashboard": false,
+      "display_manage": true,
+      "display_info": false,
+      "step": 1,
+      "with_sign": false,
+      "from_char_code": false,
+      "enc_val": [
+        {
+          "value": 1,
+          "lang": "ENG",
+          "description": "PELLET 1"
+        },
+        {
+          "value": 1,
+          "lang": "FRE",
+          "description": "PELLET 1"
+        },
+        {
+          "value": 2,
+          "lang": "ENG",
+          "description": "PELLET 2"
+        },
+        {
+          "value": 2,
+          "lang": "FRE",
+          "description": "PELLET 2"
+        },
+        {
+          "value": 3,
+          "lang": "ENG",
+          "description": "PELLET 3"
+        },
+        {
+          "value": 3,
+          "lang": "FRE",
+          "description": "PELLET 3"
+        },
+        {
+          "value": 4,
+          "lang": "ENG",
+          "description": "PELLET 4"
+        },
+        {
+          "value": 4,
+          "lang": "FRE",
+          "description": "PELLET 4"
+        },
+        {
+          "value": 5,
+          "lang": "ENG",
+          "description": "PELLET 5"
+        },
+        {
+          "value": 5,
+          "lang": "FRE",
+          "description": "PELLET 5"
+        },
+        {
+          "value": 6,
+          "lang": "ENG",
+          "description": "PELLET 6"
+        },
+        {
+          "value": 6,
+          "lang": "FRE",
+          "description": "PELLET 6"
+        },
+        {
+          "value": 7,
+          "lang": "ENG",
+          "description": "PELLET 7"
+        },
+        {
+          "value": 7,
+          "lang": "FRE",
+          "description": "PELLET 7"
+        }
+      ]
+    },
+    {
+      "reg_key": "real_power_enable",
+      "reg_name": "Potenza Reale Enable",
+      "reg_name_app": "Potenza reale Enable",
+      "reg_key_group": "real_power",
+      "reg_type": "ENABLE",
+      "offset": 105,
+      "eeprom": false,
+      "is_word": true,
+      "big_endian": false,
+      "formula": "#/2",
+      "formula_inverse": "#*2",
+      "format_string": "{0}",
+      "set_min": 0,
+      "set_max": 1,
+      "readonly": false,
+      "mask": 2,
+      "is_hex": false,
+      "is_temperature": false,
+      "use_app": true,
+      "display_dashboard": false,
+      "display_manage": false,
+      "display_info": false,
+      "step": 1,
+      "with_sign": false,
+      "from_char_code": false
+    },
+    {
+      "reg_key": "real_power_get",
+      "reg_name": "Potenza Reale",
+      "reg_name_app": "Potenza reale",
+      "reg_key_group": "real_power",
+      "reg_type": "GET",
+      "offset": 11,
+      "eeprom": false,
+      "is_word": false,
+      "big_endian": false,
+      "formula": "#",
+      "formula_inverse": "#",
+      "format_string": "{0}",
+      "set_min": 0,
+      "set_max": 255,
+      "readonly": false,
+      "mask": 255,
+      "is_hex": false,
+      "is_temperature": false,
+      "use_app": true,
+      "display_dashboard": true,
+      "display_manage": false,
+      "display_info": false,
+      "step": 1,
+      "with_sign": false,
+      "from_char_code": false,
+      "enc_val": [
+        {
+          "value": 0,
+          "lang": "ENG",
+          "description": "RIS"
+        },
+        {
+          "value": 0,
+          "lang": "FRE",
+          "description": "RIS"
+        },
+        {
+          "value": 1,
+          "lang": "ENG",
+          "description": "PELLET 1"
+        },
+        {
+          "value": 1,
+          "lang": "FRE",
+          "description": "PELLET 1"
+        },
+        {
+          "value": 2,
+          "lang": "ENG",
+          "description": "PELLET 2"
+        },
+        {
+          "value": 2,
+          "lang": "FRE",
+          "description": "PELLET 2"
+        },
+        {
+          "value": 3,
+          "lang": "ENG",
+          "description": "PELLET 3"
+        },
+        {
+          "value": 3,
+          "lang": "FRE",
+          "description": "PELLET 3"
+        },
+        {
+          "value": 4,
+          "lang": "ENG",
+          "description": "PELLET 4"
+        },
+        {
+          "value": 4,
+          "lang": "FRE",
+          "description": "PELLET 4"
+        },
+        {
+          "value": 5,
+          "lang": "ENG",
+          "description": "PELLET 5"
+        },
+        {
+          "value": 5,
+          "lang": "FRE",
+          "description": "PELLET 5"
+        },
+        {
+          "value": 6,
+          "lang": "ENG",
+          "description": "PELLET 6"
+        },
+        {
+          "value": 6,
+          "lang": "FRE",
+          "description": "PELLET 6"
+        },
+        {
+          "value": 7,
+          "lang": "ENG",
+          "description": "PELLET 7"
+        },
+        {
+          "value": 7,
+          "lang": "FRE",
+          "description": "PELLET 7"
+        },
+        {
+          "value": 8,
+          "lang": "ENG",
+          "description": "PWR-FULL"
+        },
+        {
+          "value": 8,
+          "lang": "FRE",
+          "description": "PWR-FULL"
+        }
+      ]
+    },
+    {
+      "reg_key": "status_get",
+      "reg_name": "Stato",
+      "reg_name_app": "Stato",
+      "reg_key_group": "status",
+      "reg_type": "GET",
+      "offset": 8,
+      "eeprom": false,
+      "is_word": false,
+      "big_endian": false,
+      "formula": "#",
+      "formula_inverse": "#",
+      "format_string": "{0}",
+      "set_min": 0,
+      "set_max": 255,
+      "readonly": false,
+      "mask": 65535,
+      "is_hex": false,
+      "is_temperature": false,
+      "use_app": true,
+      "display_dashboard": true,
+      "display_manage": false,
+      "display_info": false,
+      "step": 1,
+      "with_sign": false,
+      "from_char_code": false,
+      "enc_val": [
+        {
+          "value": 0,
+          "lang": "ENG",
+          "description": "OFF"
+        },
+        {
+          "value": 0,
+          "lang": "FRE",
+          "description": "OFF"
+        },
+        {
+          "value": 1,
+          "lang": "ENG",
+          "description": "WAIT"
+        },
+        {
+          "value": 1,
+          "lang": "FRE",
+          "description": "ATTEN."
+        },
+        {
+          "value": 2,
+          "lang": "ENG",
+          "description": "START"
+        },
+        {
+          "value": 2,
+          "lang": "FRE",
+          "description": "DÉBUT"
+        },
+        {
+          "value": 3,
+          "lang": "ENG",
+          "description": "START"
+        },
+        {
+          "value": 3,
+          "lang": "FRE",
+          "description": "DÉBUT"
+        },
+        {
+          "value": 4,
+          "lang": "ENG",
+          "description": "START"
+        },
+        {
+          "value": 4,
+          "lang": "FRE",
+          "description": "DÉBUT"
+        },
+        {
+          "value": 5,
+          "lang": "ENG",
+          "description": "PELLET WORKING"
+        },
+        {
+          "value": 5,
+          "lang": "FRE",
+          "description": "TRAVAIL PELLET"
+        },
+        {
+          "value": 6,
+          "lang": "ENG",
+          "description": "CLEAN"
+        },
+        {
+          "value": 6,
+          "lang": "FRE",
+          "description": "NETTOY."
+        },
+        {
+          "value": 7,
+          "lang": "ENG",
+          "description": "STOP"
+        },
+        {
+          "value": 7,
+          "lang": "FRE",
+          "description": "ARRÊT"
+        },
+        {
+          "value": 8,
+          "lang": "ENG",
+          "description": "ECO STOP"
+        },
+        {
+          "value": 8,
+          "lang": "FRE",
+          "description": "ECO STOP"
+        },
+        {
+          "value": 9,
+          "lang": "ENG",
+          "description": "STAND BY"
+        },
+        {
+          "value": 9,
+          "lang": "FRE",
+          "description": "STAND BY"
+        },
+        {
+          "value": 10,
+          "lang": "ENG",
+          "description": "ALARM"
+        },
+        {
+          "value": 10,
+          "lang": "FRE",
+          "description": "ALARME"
+        },
+        {
+          "value": 11,
+          "lang": "ENG",
+          "description": "MEM.ALM"
+        },
+        {
+          "value": 11,
+          "lang": "FRE",
+          "description": "MEM.ALM"
+        },
+        {
+          "value": 12,
+          "lang": "ENG",
+          "description": "MAN TEST START"
+        },
+        {
+          "value": 12,
+          "lang": "FRE",
+          "description": "TEST ALLUM. MAN"
+        },
+        {
+          "value": 13,
+          "lang": "ENG",
+          "description": "WOOD WORKING"
+        },
+        {
+          "value": 13,
+          "lang": "FRE",
+          "description": "TRAVAIL BOIS"
+        },
+        {
+          "value": 14,
+          "lang": "ENG",
+          "description": "PELLET LIGHT PREP."
+        },
+        {
+          "value": 14,
+          "lang": "FRE",
+          "description": "PREP. ALLUM. PELLET"
+        },
+        {
+          "value": 15,
+          "lang": "ENG",
+          "description": "BRACE TEST START"
+        },
+        {
+          "value": 15,
+          "lang": "FRE",
+          "description": "TEST ALLUM BRAISE"
+        }
+      ]
+    },
+    {
+      "reg_key": "status_managed_get",
+      "reg_name": "Stato Gestito",
+      "reg_name_app": "Stato Gestito",
+      "reg_key_group": "status_managed",
+      "reg_type": "GET",
+      "offset": 232,
+      "eeprom": false,
+      "is_word": false,
+      "big_endian": false,
+      "formula": "#",
+      "formula_inverse": "#",
+      "format_string": "{0}",
+      "set_min": 0,
+      "set_max": 255,
+      "readonly": false,
+      "mask": 255,
+      "is_hex": false,
+      "is_temperature": false,
+      "use_app": true,
+      "display_dashboard": false,
+      "display_manage": false,
+      "display_info": false,
+      "step": 1,
+      "with_sign": false,
+      "from_char_code": false,
+      "enc_val": [
+        {
+          "value": 85,
+          "lang": "ENG",
+          "description": "ON"
+        },
+        {
+          "value": 85,
+          "lang": "FRE",
+          "description": "ON"
+        },
+        {
+          "value": 170,
+          "lang": "ENG",
+          "description": "OFF"
+        },
+        {
+          "value": 170,
+          "lang": "FRE",
+          "description": "OFF"
+        }
+      ]
+    },
+    {
+      "reg_key": "temp_air2_enable",
+      "reg_name": "Temperatura Ambiente 2 Enable",
+      "reg_name_app": "Temp. Amb. Enable",
+      "reg_key_group": "temp_air2",
+      "reg_type": "ENABLE",
+      "offset": 107,
+      "eeprom": false,
+      "is_word": true,
+      "big_endian": false,
+      "formula": "#/2",
+      "formula_inverse": "#*2",
+      "format_string": "{0}",
+      "set_min": 0,
+      "set_max": 1,
+      "readonly": false,
+      "mask": 2,
+      "is_hex": false,
+      "is_temperature": false,
+      "use_app": true,
+      "display_dashboard": false,
+      "display_manage": false,
+      "display_info": false,
+      "step": 1,
+      "with_sign": false,
+      "from_char_code": false
+    },
+    {
+      "reg_key": "temp_air2_get",
+      "reg_name": "Temperatura Ambiente 2",
+      "reg_name_app": "Temp. ambiente",
+      "reg_key_group": "temp_air2",
+      "reg_type": "GET",
+      "offset": 103,
+      "eeprom": false,
+      "is_word": true,
+      "big_endian": false,
+      "formula": "#",
+      "formula_inverse": "#",
+      "format_string": "{0} °C",
+      "set_min": 0,
+      "set_max": 255,
+      "readonly": false,
+      "mask": 65535,
+      "is_hex": false,
+      "is_temperature": false,
+      "use_app": true,
+      "display_dashboard": true,
+      "display_manage": false,
+      "display_info": false,
+      "step": 1,
+      "with_sign": false,
+      "from_char_code": false
+    },
+    {
+      "reg_key": "temp_air_enable",
+      "reg_name": "Temperatura Ambiente Enable",
+      "reg_name_app": "Temp. Amb. Enable",
+      "reg_key_group": "temp_air",
+      "reg_type": "ENABLE",
+      "offset": 105,
+      "eeprom": false,
+      "is_word": true,
+      "big_endian": false,
+      "formula": "#/8",
+      "formula_inverse": "#*8",
+      "format_string": "{0}",
+      "set_min": 0,
+      "set_max": 1,
+      "readonly": false,
+      "mask": 8,
+      "is_hex": false,
+      "is_temperature": false,
+      "use_app": true,
+      "display_dashboard": false,
+      "display_manage": false,
+      "display_info": false,
+      "step": 1,
+      "with_sign": false,
+      "from_char_code": false
+    },
+    {
+      "reg_key": "temp_air_set",
+      "reg_name": "Set Temperatura Ambiente",
+      "reg_name_app": "Temp. ambiente",
+      "reg_key_group": "temp_air",
+      "reg_type": "SET",
+      "offset": 33122,
+      "eeprom": true,
+      "is_word": true,
+      "big_endian": false,
+      "formula": "#",
+      "formula_inverse": "#",
+      "format_string": "{0} °C",
+      "set_min": 7,
+      "set_max": 41,
+      "readonly": false,
+      "mask": 65535,
+      "is_hex": false,
+      "is_temperature": false,
+      "use_app": true,
+      "display_dashboard": false,
+      "display_manage": true,
+      "display_info": false,
+      "step": 1,
+      "with_sign": false,
+      "from_char_code": false,
+      "enc_val": [
+        {
+          "value": 41,
+          "lang": "ENG",
+          "description": "MAN"
+        },
+        {
+          "value": 41,
+          "lang": "FRE",
+          "description": "MAN"
+        }
+      ]
+    },
+    {
+      "reg_key": "temp_gas_flue_get",
+      "reg_name": "Temperatura Fumi",
+      "reg_name_app": "Temp. fumi",
+      "reg_key_group": "temp_gas_flue",
+      "reg_type": "GET",
+      "offset": 2,
+      "eeprom": false,
+      "is_word": true,
+      "big_endian": false,
+      "formula": "#",
+      "formula_inverse": "#",
+      "format_string": "{0} °C",
+      "set_min": 0,
+      "set_max": 65535,
+      "readonly": false,
+      "mask": 65535,
+      "is_hex": false,
+      "is_temperature": false,
+      "use_app": true,
+      "display_dashboard": false,
+      "display_manage": false,
+      "display_info": true,
+      "step": 1,
+      "with_sign": false,
+      "from_char_code": false
+    }
+  ],
+  "buffer": {
+    "Items": [2, 8, 11, 34, 103, 105, 107, 232, 33120, 33122],
+    "Values": [34, 8, 3, 0, 21, 10, 3, 0, 3, 22]
+  },
+  "expected": {
+    "alarms_enable": 8,
+    "alarms_get": 0,
+    "power_enable": 1,
+    "power_set": 3,
+    "real_power_enable": 1,
+    "real_power_get": 3,
+    "status_get": 8,
+    "status_managed_get": 0,
+    "temp_air2_enable": 1,
+    "temp_air2_get": 21,
+    "temp_air_enable": 1,
+    "temp_air_set": 22,
+    "temp_gas_flue_get": 34
+  }
+}

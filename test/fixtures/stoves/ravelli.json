@@ -1,0 +1,1152 @@
+{
+  "source": "vincentwolsink/home_assistant_micronova_agua_iot, fixtures/ravelli.json (Apache-2.0), trimmed",
+  "stove": {
+    "id": 3107,
+    "id_device": "RV5566778899",
+    "id_product": "P-RV-09",
+    "product_serial": "RV-2309-0071",
+    "name": "Ravelli",
+    "name_product": "Ravelli RV80",
+    "id_registers_map": 9,
+    "is_online": true
+  },
+  "registers": [
+    {
+      "reg_key": "alarms_get",
+      "reg_name": "Allarmi",
+      "reg_name_app": "Allarmi",
+      "reg_key_group": "alarms",
+      "reg_type": "GET",
+      "offset": 64,
+      "eeprom": false,
+      "is_word": false,
+      "big_endian": false,
+      "formula": "#",
+      "formula_inverse": "#",
+      "format_string": "{0}",
+      "set_min": 0,
+      "set_max": 255,
+      "readonly": false,
+      "mask": 65535,
+      "is_hex": false,
+      "is_temperature": false,
+      "use_app": true,
+      "display_dashboard": true,
+      "display_manage": false,
+      "display_info": false,
+      "step": 1,
+      "with_sign": false,
+      "from_char_code": false,
+      "enc_val": [
+        {
+          "value": 0,
+          "lang": "ENG",
+          "description": " --"
+        },
+        {
+          "value": 0,
+          "lang": "FRE",
+          "description": " --"
+        },
+        {
+          "value": 1,
+          "lang": "ENG",
+          "description": " --"
+        },
+        {
+          "value": 1,
+          "lang": "FRE",
+          "description": " --"
+        },
+        {
+          "value": 3,
+          "lang": "ENG",
+          "description": " --"
+        },
+        {
+          "value": 3,
+          "lang": "FRE",
+          "description": " --"
+        },
+        {
+          "value": 4,
+          "lang": "ENG",
+          "description": " --"
+        },
+        {
+          "value": 4,
+          "lang": "FRE",
+          "description": " --"
+        },
+        {
+          "value": 5,
+          "lang": "ENG",
+          "description": " --"
+        },
+        {
+          "value": 5,
+          "lang": "FRE",
+          "description": " --"
+        },
+        {
+          "value": 7,
+          "lang": "ENG",
+          "description": " --"
+        },
+        {
+          "value": 7,
+          "lang": "FRE",
+          "description": " --"
+        },
+        {
+          "value": 8,
+          "lang": "ENG",
+          "description": " --"
+        },
+        {
+          "value": 8,
+          "lang": "FRE",
+          "description": " --"
+        },
+        {
+          "value": 9,
+          "lang": "ENG",
+          "description": " --"
+        },
+        {
+          "value": 9,
+          "lang": "FRE",
+          "description": " --"
+        },
+        {
+          "value": 10,
+          "lang": "ENG",
+          "description": " --"
+        },
+        {
+          "value": 10,
+          "lang": "FRE",
+          "description": " --"
+        },
+        {
+          "value": 11,
+          "lang": "ENG",
+          "description": " --"
+        },
+        {
+          "value": 11,
+          "lang": "FRE",
+          "description": " --"
+        },
+        {
+          "value": 12,
+          "lang": "ENG",
+          "description": " --"
+        },
+        {
+          "value": 12,
+          "lang": "FRE",
+          "description": " --"
+        },
+        {
+          "value": 13,
+          "lang": "ENG",
+          "description": "AL 09"
+        },
+        {
+          "value": 13,
+          "lang": "FRE",
+          "description": "AL 09"
+        },
+        {
+          "value": 14,
+          "lang": "ENG",
+          "description": "HOT FUMI"
+        },
+        {
+          "value": 14,
+          "lang": "FRE",
+          "description": "HOT FUMI"
+        },
+        {
+          "value": 15,
+          "lang": "ENG",
+          "description": "GEN."
+        },
+        {
+          "value": 15,
+          "lang": "FRE",
+          "description": "GEN."
+        },
+        {
+          "value": 16,
+          "lang": "ENG",
+          "description": "AL 01"
+        },
+        {
+          "value": 16,
+          "lang": "FRE",
+          "description": "AL 01"
+        },
+        {
+          "value": 17,
+          "lang": "ENG",
+          "description": "AL 02"
+        },
+        {
+          "value": 17,
+          "lang": "FRE",
+          "description": "AL 02"
+        },
+        {
+          "value": 18,
+          "lang": "ENG",
+          "description": "AL 03"
+        },
+        {
+          "value": 18,
+          "lang": "FRE",
+          "description": "AL 03"
+        },
+        {
+          "value": 19,
+          "lang": "ENG",
+          "description": "AL 04"
+        },
+        {
+          "value": 19,
+          "lang": "FRE",
+          "description": "AL 04"
+        },
+        {
+          "value": 20,
+          "lang": "ENG",
+          "description": "AL 05"
+        },
+        {
+          "value": 20,
+          "lang": "FRE",
+          "description": "AL 05"
+        },
+        {
+          "value": 21,
+          "lang": "ENG",
+          "description": "AL 06"
+        },
+        {
+          "value": 21,
+          "lang": "FRE",
+          "description": "AL 06"
+        },
+        {
+          "value": 22,
+          "lang": "ENG",
+          "description": "AL 07"
+        },
+        {
+          "value": 22,
+          "lang": "FRE",
+          "description": "AL 07"
+        },
+        {
+          "value": 23,
+          "lang": "ENG",
+          "description": "AL 08"
+        },
+        {
+          "value": 23,
+          "lang": "FRE",
+          "description": "AL 08"
+        },
+        {
+          "value": 24,
+          "lang": "ENG",
+          "description": " --"
+        },
+        {
+          "value": 24,
+          "lang": "FRE",
+          "description": " --"
+        },
+        {
+          "value": 25,
+          "lang": "ENG",
+          "description": " --"
+        },
+        {
+          "value": 25,
+          "lang": "FRE",
+          "description": " --"
+        },
+        {
+          "value": 26,
+          "lang": "ENG",
+          "description": "AL 11"
+        },
+        {
+          "value": 26,
+          "lang": "FRE",
+          "description": "AL 11"
+        },
+        {
+          "value": 27,
+          "lang": "ENG",
+          "description": "AL 12"
+        },
+        {
+          "value": 27,
+          "lang": "FRE",
+          "description": "AL 12"
+        },
+        {
+          "value": 28,
+          "lang": "ENG",
+          "description": "AL 13"
+        },
+        {
+          "value": 28,
+          "lang": "FRE",
+          "description": "AL 13"
+        },
+        {
+          "value": 29,
+          "lang": "ENG",
+          "description": "AL 13"
+        },
+        {
+          "value": 29,
+          "lang": "FRE",
+          "description": "AL 13"
+        },
+        {
+          "value": 30,
+          "lang": "ENG",
+          "description": "AL 14"
+        },
+        {
+          "value": 30,
+          "lang": "FRE",
+          "description": "AL 14"
+        },
+        {
+          "value": 31,
+          "lang": "ENG",
+          "description": "AL 15"
+        },
+        {
+          "value": 31,
+          "lang": "FRE",
+          "description": "AL 15"
+        }
+      ]
+    },
+    {
+      "reg_key": "power_set",
+      "reg_name": "Set Potenza",
+      "reg_name_app": "Potenza",
+      "reg_key_group": "power",
+      "reg_type": "SET",
+      "offset": 32895,
+      "eeprom": true,
+      "is_word": false,
+      "big_endian": false,
+      "formula": "#",
+      "formula_inverse": "#",
+      "format_string": "{0}",
+      "set_min": 1,
+      "set_max": 5,
+      "readonly": false,
+      "mask": 65535,
+      "is_hex": false,
+      "is_temperature": false,
+      "use_app": true,
+      "display_dashboard": false,
+      "display_manage": true,
+      "display_info": false,
+      "step": 1,
+      "with_sign": false,
+      "from_char_code": false,
+      "enc_val": [
+        {
+          "value": 1,
+          "lang": "ENG",
+          "description": "1 - Min"
+        },
+        {
+          "value": 1,
+          "lang": "FRE",
+          "description": "1 - Min"
+        },
+        {
+          "value": 5,
+          "lang": "ENG",
+          "description": "5 - Max"
+        },
+        {
+          "value": 5,
+          "lang": "FRE",
+          "description": "5 - Max"
+        }
+      ]
+    },
+    {
+      "reg_key": "real_power_get",
+      "reg_name": "Potenza Reale",
+      "reg_name_app": "Potenza reale",
+      "reg_key_group": "real_power",
+      "reg_type": "GET",
+      "offset": 52,
+      "eeprom": false,
+      "is_word": false,
+      "big_endian": false,
+      "formula": "#",
+      "formula_inverse": "#",
+      "format_string": "{0}",
+      "set_min": 0,
+      "set_max": 5,
+      "readonly": false,
+      "mask": 65535,
+      "is_hex": false,
+      "is_temperature": false,
+      "use_app": true,
+      "display_dashboard": true,
+      "display_manage": false,
+      "display_info": false,
+      "step": 1,
+      "with_sign": false,
+      "from_char_code": false,
+      "enc_val": [
+        {
+          "value": 1,
+          "lang": "ENG",
+          "description": "1 - Min"
+        },
+        {
+          "value": 1,
+          "lang": "FRE",
+          "description": "1 - Min"
+        },
+        {
+          "value": 5,
+          "lang": "ENG",
+          "description": "5 - Max"
+        },
+        {
+          "value": 5,
+          "lang": "FRE",
+          "description": "5 - Max"
+        }
+      ]
+    },
+    {
+      "reg_key": "status_get",
+      "reg_name": "Stato",
+      "reg_name_app": "Stato",
+      "reg_key_group": "status",
+      "reg_type": "GET",
+      "offset": 33,
+      "eeprom": false,
+      "is_word": false,
+      "big_endian": false,
+      "formula": "#",
+      "formula_inverse": "#",
+      "format_string": "{0}",
+      "set_min": 0,
+      "set_max": 255,
+      "readonly": false,
+      "mask": 65535,
+      "is_hex": false,
+      "is_temperature": false,
+      "use_app": true,
+      "display_dashboard": true,
+      "display_manage": false,
+      "display_info": false,
+      "step": 1,
+      "with_sign": false,
+      "from_char_code": false,
+      "enc_val": [
+        {
+          "value": 0,
+          "lang": "ENG",
+          "description": "OFF"
+        },
+        {
+          "value": 0,
+          "lang": "FRE",
+          "description": "OFF"
+        },
+        {
+          "value": 1,
+          "lang": "ENG",
+          "description": "IGNITION"
+        },
+        {
+          "value": 1,
+          "lang": "FRE",
+          "description": "ALLUMAGE"
+        },
+        {
+          "value": 2,
+          "lang": "ENG",
+          "description": "WAITING FLAME"
+        },
+        {
+          "value": 2,
+          "lang": "FRE",
+          "description": "ATTEINTE FLAMME"
+        },
+        {
+          "value": 3,
+          "lang": "ENG",
+          "description": "FLAME LIGHT"
+        },
+        {
+          "value": 3,
+          "lang": "FRE",
+          "description": "FLAMME PRESENTE"
+        },
+        {
+          "value": 4,
+          "lang": "ENG",
+          "description": "WORK"
+        },
+        {
+          "value": 4,
+          "lang": "FRE",
+          "description": "TRAVAIL"
+        },
+        {
+          "value": 5,
+          "lang": "ENG",
+          "description": "FIRE POT CLEANING"
+        },
+        {
+          "value": 5,
+          "lang": "FRE",
+          "description": "NETTOYAGE BRASIER"
+        },
+        {
+          "value": 6,
+          "lang": "ENG",
+          "description": "FINAL CLEANING"
+        },
+        {
+          "value": 6,
+          "lang": "FRE",
+          "description": "NETTOYAGE FINAL"
+        },
+        {
+          "value": 7,
+          "lang": "ENG",
+          "description": "ECO STOP"
+        },
+        {
+          "value": 7,
+          "lang": "FRE",
+          "description": "ECO STOP"
+        },
+        {
+          "value": 8,
+          "lang": "ENG",
+          "description": "ALARM"
+        },
+        {
+          "value": 8,
+          "lang": "FRE",
+          "description": "ALARME"
+        },
+        {
+          "value": 9,
+          "lang": "ENG",
+          "description": "MEMORY ALARM"
+        },
+        {
+          "value": 9,
+          "lang": "FRE",
+          "description": "MEMOIRE ALARME"
+        }
+      ]
+    },
+    {
+      "reg_key": "status_managed_get",
+      "reg_name": "Stato Gestito",
+      "reg_name_app": "Stato Gestito",
+      "reg_key_group": "status_managed",
+      "reg_type": "GET",
+      "offset": 232,
+      "eeprom": false,
+      "is_word": false,
+      "big_endian": false,
+      "formula": "#",
+      "formula_inverse": "#",
+      "format_string": "{0}",
+      "set_min": 0,
+      "set_max": 255,
+      "readonly": false,
+      "mask": 65535,
+      "is_hex": false,
+      "is_temperature": false,
+      "use_app": true,
+      "display_dashboard": false,
+      "display_manage": false,
+      "display_info": false,
+      "step": 1,
+      "with_sign": false,
+      "from_char_code": false,
+      "enc_val": [
+        {
+          "value": 85,
+          "lang": "ENG",
+          "description": "ON"
+        },
+        {
+          "value": 85,
+          "lang": "FRE",
+          "description": "ON"
+        },
+        {
+          "value": 170,
+          "lang": "ENG",
+          "description": "OFF"
+        },
+        {
+          "value": 170,
+          "lang": "FRE",
+          "description": "OFF"
+        }
+      ]
+    },
+    {
+      "reg_key": "temp_air_enable",
+      "reg_name": "Temperatura Ambiente Enable",
+      "reg_name_app": "Temp. Amb. Enable",
+      "reg_key_group": "temp_air",
+      "reg_type": "ENABLE",
+      "offset": 1,
+      "eeprom": false,
+      "is_word": false,
+      "big_endian": false,
+      "formula": "#",
+      "formula_inverse": "#",
+      "format_string": "{0}",
+      "set_min": 0,
+      "set_max": 255,
+      "readonly": false,
+      "mask": 65535,
+      "is_hex": false,
+      "is_temperature": false,
+      "use_app": true,
+      "display_dashboard": false,
+      "display_manage": false,
+      "display_info": false,
+      "step": 1,
+      "with_sign": false,
+      "from_char_code": false,
+      "enable_val": [
+        {
+          "value": 1
+        },
+        {
+          "value": 2
+        },
+        {
+          "value": 3
+        },
+        {
+          "value": 4
+        },
+        {
+          "value": 5
+        },
+        {
+          "value": 6
+        },
+        {
+          "value": 7
+        },
+        {
+          "value": 8
+        },
+        {
+          "value": 9
+        },
+        {
+          "value": 10
+        },
+        {
+          "value": 11
+        },
+        {
+          "value": 12
+        },
+        {
+          "value": 13
+        },
+        {
+          "value": 14
+        },
+        {
+          "value": 15
+        },
+        {
+          "value": 16
+        },
+        {
+          "value": 17
+        },
+        {
+          "value": 18
+        },
+        {
+          "value": 19
+        },
+        {
+          "value": 20
+        },
+        {
+          "value": 21
+        },
+        {
+          "value": 22
+        },
+        {
+          "value": 23
+        },
+        {
+          "value": 24
+        },
+        {
+          "value": 25
+        },
+        {
+          "value": 26
+        },
+        {
+          "value": 27
+        },
+        {
+          "value": 28
+        },
+        {
+          "value": 29
+        },
+        {
+          "value": 30
+        },
+        {
+          "value": 31
+        },
+        {
+          "value": 32
+        },
+        {
+          "value": 33
+        },
+        {
+          "value": 34
+        },
+        {
+          "value": 35
+        },
+        {
+          "value": 36
+        },
+        {
+          "value": 37
+        },
+        {
+          "value": 38
+        },
+        {
+          "value": 39
+        },
+        {
+          "value": 40
+        },
+        {
+          "value": 41
+        },
+        {
+          "value": 42
+        },
+        {
+          "value": 43
+        },
+        {
+          "value": 44
+        },
+        {
+          "value": 45
+        },
+        {
+          "value": 46
+        },
+        {
+          "value": 47
+        },
+        {
+          "value": 48
+        },
+        {
+          "value": 49
+        },
+        {
+          "value": 50
+        },
+        {
+          "value": 51
+        },
+        {
+          "value": 52
+        },
+        {
+          "value": 53
+        },
+        {
+          "value": 54
+        },
+        {
+          "value": 55
+        },
+        {
+          "value": 56
+        },
+        {
+          "value": 57
+        },
+        {
+          "value": 58
+        },
+        {
+          "value": 59
+        },
+        {
+          "value": 60
+        },
+        {
+          "value": 61
+        },
+        {
+          "value": 62
+        },
+        {
+          "value": 63
+        },
+        {
+          "value": 64
+        },
+        {
+          "value": 65
+        },
+        {
+          "value": 66
+        },
+        {
+          "value": 67
+        },
+        {
+          "value": 68
+        },
+        {
+          "value": 69
+        },
+        {
+          "value": 70
+        },
+        {
+          "value": 71
+        },
+        {
+          "value": 72
+        },
+        {
+          "value": 73
+        },
+        {
+          "value": 74
+        },
+        {
+          "value": 75
+        },
+        {
+          "value": 76
+        },
+        {
+          "value": 77
+        },
+        {
+          "value": 78
+        },
+        {
+          "value": 79
+        },
+        {
+          "value": 80
+        },
+        {
+          "value": 81
+        },
+        {
+          "value": 82
+        },
+        {
+          "value": 83
+        },
+        {
+          "value": 84
+        },
+        {
+          "value": 85
+        },
+        {
+          "value": 86
+        },
+        {
+          "value": 87
+        },
+        {
+          "value": 88
+        },
+        {
+          "value": 89
+        },
+        {
+          "value": 90
+        },
+        {
+          "value": 91
+        },
+        {
+          "value": 92
+        },
+        {
+          "value": 93
+        },
+        {
+          "value": 94
+        },
+        {
+          "value": 95
+        },
+        {
+          "value": 96
+        },
+        {
+          "value": 97
+        },
+        {
+          "value": 98
+        },
+        {
+          "value": 99
+        },
+        {
+          "value": 100
+        }
+      ]
+    },
+    {
+      "reg_key": "temp_air_get",
+      "reg_name": "Temperatura Ambiente",
+      "reg_name_app": "Temp. ambiente",
+      "reg_key_group": "temp_air",
+      "reg_type": "GET",
+      "offset": 1,
+      "eeprom": false,
+      "is_word": false,
+      "big_endian": false,
+      "formula": "#/2",
+      "formula_inverse": "#*2",
+      "format_string": "{0} °C",
+      "set_min": 0,
+      "set_max": 100,
+      "readonly": false,
+      "mask": 255,
+      "is_hex": false,
+      "is_temperature": false,
+      "use_app": true,
+      "display_dashboard": true,
+      "display_manage": false,
+      "display_info": false,
+      "step": 1,
+      "with_sign": false,
+      "from_char_code": false
+    },
+    {
+      "reg_key": "temp_air_palm_enable",
+      "reg_name": "T. Amb. Palmare Enable",
+      "reg_name_app": "Temp. Palm. Enable",
+      "reg_key_group": "temp_air_palm",
+      "reg_type": "ENABLE",
+      "offset": 1,
+      "eeprom": false,
+      "is_word": false,
+      "big_endian": false,
+      "formula": "#",
+      "formula_inverse": "#",
+      "format_string": "{0}",
+      "set_min": 0,
+      "set_max": 255,
+      "readonly": false,
+      "mask": 65535,
+      "is_hex": false,
+      "is_temperature": false,
+      "use_app": false,
+      "display_dashboard": false,
+      "display_manage": false,
+      "display_info": false,
+      "step": 1,
+      "with_sign": false,
+      "from_char_code": false
+    },
+    {
+      "reg_key": "temp_air_palm_get",
+      "reg_name": "T. Amb. Palmare",
+      "reg_name_app": "Temp. Palm.",
+      "reg_key_group": "temp_air_palm",
+      "reg_type": "GET",
+      "offset": 13,
+      "eeprom": false,
+      "is_word": false,
+      "big_endian": false,
+      "formula": "#",
+      "formula_inverse": "#",
+      "format_string": "{0} °C",
+      "set_min": 0,
+      "set_max": 255,
+      "readonly": false,
+      "mask": 65535,
+      "is_hex": false,
+      "is_temperature": false,
+      "use_app": false,
+      "display_dashboard": false,
+      "display_manage": false,
+      "display_info": false,
+      "step": 1,
+      "with_sign": false,
+      "from_char_code": false
+    },
+    {
+      "reg_key": "temp_air_palm_set",
+      "reg_name": "T. Amb. Palmare Set",
+      "reg_name_app": "Temp. Palm. Set",
+      "reg_key_group": "temp_air_palm",
+      "reg_type": "SET",
+      "offset": 32851,
+      "eeprom": true,
+      "is_word": false,
+      "big_endian": false,
+      "formula": "#",
+      "formula_inverse": "#",
+      "format_string": "{0} °C",
+      "set_min": 7,
+      "set_max": 41,
+      "readonly": false,
+      "mask": 65535,
+      "is_hex": false,
+      "is_temperature": false,
+      "use_app": false,
+      "display_dashboard": false,
+      "display_manage": false,
+      "display_info": false,
+      "step": 1,
+      "with_sign": false,
+      "from_char_code": false,
+      "enc_val": []
+    },
+    {
+      "reg_key": "temp_air_set",
+      "reg_name": "Set Temperatura Ambiente",
+      "reg_name_app": "Temp. ambiente",
+      "reg_key_group": "temp_air",
+      "reg_type": "SET",
+      "offset": 32893,
+      "eeprom": true,
+      "is_word": false,
+      "big_endian": false,
+      "formula": "#",
+      "formula_inverse": "#",
+      "format_string": "{0} °C",
+      "set_min": 6,
+      "set_max": 41,
+      "readonly": false,
+      "mask": 65535,
+      "is_hex": false,
+      "is_temperature": false,
+      "use_app": true,
+      "display_dashboard": false,
+      "display_manage": true,
+      "display_info": false,
+      "step": 1,
+      "with_sign": false,
+      "from_char_code": false,
+      "enc_val": [
+        {
+          "value": 6,
+          "lang": "ENG",
+          "description": "- EXT"
+        },
+        {
+          "value": 6,
+          "lang": "FRE",
+          "description": "- EXT"
+        },
+        {
+          "value": 41,
+          "lang": "ENG",
+          "description": "MAN"
+        },
+        {
+          "value": 41,
+          "lang": "FRE",
+          "description": "MAN"
+        }
+      ]
+    },
+    {
+      "reg_key": "temp_gas_flue_get",
+      "reg_name": "Temperatura Fumi",
+      "reg_name_app": "Temp. fumi",
+      "reg_key_group": "temp_gas_flue",
+      "reg_type": "GET",
+      "offset": 68,
+      "eeprom": false,
+      "is_word": true,
+      "big_endian": true,
+      "formula": "#",
+      "formula_inverse": "#",
+      "format_string": "{0} °C",
+      "set_min": 0,
+      "set_max": 65535,
+      "readonly": true,
+      "mask": 65535,
+      "is_hex": false,
+      "is_temperature": false,
+      "use_app": true,
+      "display_dashboard": true,
+      "display_manage": false,
+      "display_info": false,
+      "step": 1,
+      "with_sign": false,
+      "from_char_code": false
+    }
+  ],
+  "buffer": {
+    "Items": [1, 13, 33, 52, 64, 68, 232, 32851, 32893, 32895],
+    "Values": [31, 0, 0, 1, 0, 17, 113, 0, 20, 3]
+  },
+  "expected": {
+    "alarms_get": 0,
+    "power_set": 3,
+    "real_power_get": 1,
+    "status_get": 0,
+    "status_managed_get": 113,
+    "temp_air_enable": 31,
+    "temp_air_get": 15.5,
+    "temp_air_palm_enable": 31,
+    "temp_air_palm_get": 0,
+    "temp_air_palm_set": 0,
+    "temp_air_set": 20,
+    "temp_gas_flue_get": 17
+  }
+}

@@ -1,177 +1,224 @@
 {
   "manifest_version": 1,
   "type": "device",
-  "name": "Demo Devices Template",
+  "name": "Micronova Agua IOT",
   "description": {
-    "en": "Starter template showing sensors, a switch, a dimmable light and a smart plug.",
-    "fr": "Template de démarrage : capteurs, interrupteur, lampe variable et prise connectée."
+    "en": "Pellet stoves of the Agua IOT cloud: MyPiazzetta, Total Control 3.0, Jolly Mec, Ravelli…",
+    "fr": "Poêles à granulés du cloud Agua IOT : MyPiazzetta, Total Control 3.0, Jolly Mec, Ravelli…"
   },
-  "version": "1.0.0",
-  "docker_image": "ghcr.io/gladysassistant/integration-template-js:1.0.0",
+  "version": "0.1.0",
+  "docker_image": "ghcr.io/lm1lc3n7/gladys-agua-iot:0.1.0",
   "gladys_version": ">=5.1.0",
-  "cover_image": "https://raw.githubusercontent.com/GladysAssistant/integration-template-js/master/cover.png",
-  "categories": ["lighting", "security", "environment"],
-  "transports": ["local", "cloud"],
+  "cover_image": "https://raw.githubusercontent.com/LM1LC3N7/gladys-agua-iot/main/cover.png",
+  "categories": ["climate"],
+  "transports": ["cloud"],
   "config_schema": [
     {
       "key": "intro",
       "type": "section",
-      "label": { "en": "Getting started", "fr": "Pour commencer" },
+      "label": {
+        "en": "Your pellet stove, from its vendor app",
+        "fr": "Votre poêle à granulés, via son application"
+      },
       "description": {
-        "en": "The demo weather station reads real data from the free Open-Meteo API: pick the coordinates to observe. No account, no API key.",
-        "fr": "La station météo de démonstration lit de vraies données via l'API gratuite Open-Meteo : choisissez les coordonnées à observer. Pas de compte, pas de clé d'API."
+        "en": "Many pellet stove brands (Piazzetta, Extraflame, Jolly Mec, Ravelli, MCZ Easy Connect, Laminox, Nordic Fire, Thermoflux…) use the Micronova Agua IOT cloud behind their Wi-Fi app. Choose that app, then type the e-mail and the password of its account: Gladys logs in like the app, offers each stove in the Discovery tab, and reads it at the chosen interval (one minute at most). On/off, room and water setpoints, power level, temperatures, state and alarms, with a \"Stove alarm\" scene trigger. Unofficial, not affiliated with Micronova or the stove makers.",
+        "fr": "De nombreuses marques de poêles à granulés (Piazzetta, Extraflame, Jolly Mec, Ravelli, MCZ Easy Connect, Laminox, Nordic Fire, Thermoflux…) utilisent le cloud Micronova Agua IOT derrière leur application Wi-Fi. Choisissez cette application, puis saisissez l'e-mail et le mot de passe de son compte : Gladys se connecte comme l'application, propose chaque poêle dans l'onglet Découverte et le lit à l'intervalle choisi (une minute au plus). Marche/arrêt, consignes d'air et d'eau, puissance, températures, état et alarmes, avec un déclencheur de scène « Alarme du poêle ». Non officiel, sans lien avec Micronova ni les fabricants."
       },
       "links": [
         {
-          "url": "https://open-meteo.com/en/docs",
-          "label": { "en": "Open-Meteo documentation", "fr": "Documentation Open-Meteo" }
+          "url": "https://github.com/LM1LC3N7/gladys-agua-iot/blob/main/docs/fr.md",
+          "label": { "en": "Guide (French)", "fr": "Guide (français)" }
+        },
+        {
+          "url": "https://github.com/LM1LC3N7/gladys-agua-iot/blob/main/docs/en.md",
+          "label": { "en": "Guide (English)", "fr": "Guide (anglais)" }
         }
       ]
     },
     {
-      "key": "latitude",
-      "type": "number",
-      "label": { "en": "Latitude", "fr": "Latitude" },
-      "description": {
-        "en": "Latitude used for the demo weather sensor.",
-        "fr": "Latitude utilisée par le capteur météo de démonstration."
-      },
-      "placeholder": { "en": "e.g. 48.8566", "fr": "ex. 48.8566" },
-      "required": true,
-      "default": 48.8566,
-      "min": -90,
-      "max": 90
-    },
-    {
-      "key": "longitude",
-      "type": "number",
-      "label": { "en": "Longitude", "fr": "Longitude" },
-      "description": {
-        "en": "Longitude used for the demo weather sensor.",
-        "fr": "Longitude utilisée par le capteur météo de démonstration."
-      },
-      "placeholder": { "en": "e.g. 2.3522", "fr": "ex. 2.3522" },
-      "required": true,
-      "default": 2.3522,
-      "min": -180,
-      "max": 180
-    },
-    {
-      "key": "unit",
+      "key": "app",
       "type": "select",
-      "label": { "en": "Temperature unit", "fr": "Unité de température" },
-      "required": false,
-      "default": "celsius",
+      "label": { "en": "Your stove app", "fr": "L'application de votre poêle" },
+      "description": {
+        "en": "The app you control the stove with on your phone: each one has its own cloud.",
+        "fr": "L'application avec laquelle vous pilotez le poêle sur votre téléphone : chacune a son propre cloud."
+      },
+      "required": true,
       "options": [
-        { "value": "celsius", "label": { "en": "Celsius", "fr": "Celsius" } },
-        { "value": "fahrenheit", "label": { "en": "Fahrenheit", "fr": "Fahrenheit" } }
+        { "value": "alfaplam", "label": { "en": "Alfaplam", "fr": "Alfaplam" } },
+        {
+          "value": "app_o_bioen",
+          "label": { "en": "APP-O BIOEN (Unical)", "fr": "APP-O BIOEN (Unical)" }
+        },
+        { "value": "boreal_home", "label": { "en": "Boreal Home", "fr": "Boreal Home" } },
+        { "value": "bronpi_home", "label": { "en": "Bronpi Home", "fr": "Bronpi Home" } },
+        {
+          "value": "darwin_evolution",
+          "label": { "en": "Darwin Evolution (Cola)", "fr": "Darwin Evolution (Cola)" }
+        },
+        {
+          "value": "easy_connect",
+          "label": { "en": "Easy Connect (MCZ)", "fr": "Easy Connect (MCZ)" }
+        },
+        {
+          "value": "easy_connect_plus",
+          "label": { "en": "Easy Connect Plus (MCZ)", "fr": "Easy Connect Plus (MCZ)" }
+        },
+        {
+          "value": "easy_connect_poele",
+          "label": { "en": "Easy Connect Poêle (MCZ)", "fr": "Easy Connect Poêle (MCZ)" }
+        },
+        {
+          "value": "elcofire",
+          "label": { "en": "Elcofire Pellet Home", "fr": "Elcofire Pellet Home" }
+        },
+        { "value": "elfire", "label": { "en": "Elfire Wifi", "fr": "Elfire Wifi" } },
+        {
+          "value": "eoss",
+          "label": { "en": "EOSS Wifi (Solartecnik)", "fr": "EOSS Wifi (Solartecnik)" }
+        },
+        {
+          "value": "evacalor",
+          "label": { "en": "EvaCalòr – PuntoFuoco", "fr": "EvaCalòr – PuntoFuoco" }
+        },
+        { "value": "fontana_forni", "label": { "en": "Fontana Forni", "fr": "Fontana Forni" } },
+        {
+          "value": "fonte_flamme",
+          "label": { "en": "Fonte Flamme contrôle 1", "fr": "Fonte Flamme contrôle 1" }
+        },
+        { "value": "globe_fire", "label": { "en": "Globe-fire", "fr": "Globe-fire" } },
+        { "value": "go_heat", "label": { "en": "GO HEAT (AMG)", "fr": "GO HEAT (AMG)" } },
+        { "value": "jolly_mec", "label": { "en": "Jolly Mec Wi-Fi", "fr": "Jolly Mec Wi-Fi" } },
+        { "value": "karmek", "label": { "en": "Karmek Wifi", "fr": "Karmek Wifi" } },
+        { "value": "klover_home", "label": { "en": "Klover Home", "fr": "Klover Home" } },
+        {
+          "value": "laminox",
+          "label": { "en": "LAMINOX Remote Control 2.0", "fr": "LAMINOX Remote Control 2.0" }
+        },
+        { "value": "lorflam_home", "label": { "en": "Lorflam Home", "fr": "Lorflam Home" } },
+        { "value": "moretti_design", "label": { "en": "Moretti design", "fr": "Moretti design" } },
+        { "value": "my_corisit", "label": { "en": "My Corisit", "fr": "My Corisit" } },
+        { "value": "mypiazzetta", "label": { "en": "MyPiazzetta", "fr": "MyPiazzetta" } },
+        { "value": "mysuperior", "label": { "en": "MySuperior", "fr": "MySuperior" } },
+        { "value": "nina", "label": { "en": "Nina (Micronova)", "fr": "Nina (Micronova)" } },
+        { "value": "nobis_fi", "label": { "en": "Nobis-Fi", "fr": "Nobis-Fi" } },
+        { "value": "nordic_fire", "label": { "en": "Nordic Fire 2.0", "fr": "Nordic Fire 2.0" } },
+        { "value": "ravelli", "label": { "en": "Ravelli Wi-Fi", "fr": "Ravelli Wi-Fi" } },
+        {
+          "value": "stufe_pellet_italia",
+          "label": { "en": "Stufe a pellet Italia", "fr": "Stufe a pellet Italia" }
+        },
+        { "value": "thermoflux", "label": { "en": "Thermoflux", "fr": "Thermoflux" } },
+        {
+          "value": "total_control_3",
+          "label": {
+            "en": "Total Control 3.0 (Extraflame)",
+            "fr": "Total Control 3.0 (Extraflame)"
+          }
+        },
+        {
+          "value": "ts_smart",
+          "label": { "en": "TS Smart (Tim Sistem)", "fr": "TS Smart (Tim Sistem)" }
+        },
+        {
+          "value": "turbofonte",
+          "label": { "en": "TurboFonte (MCZ)", "fr": "TurboFonte (MCZ)" }
+        },
+        {
+          "value": "wi_phire",
+          "label": { "en": "Wi-Phire (Linea VZ)", "fr": "Wi-Phire (Linea VZ)" }
+        }
       ]
     },
     {
-      "key": "poll_frequency",
-      "type": "number",
-      "label": { "en": "Refresh interval (s)", "fr": "Intervalle de rafraîchissement (s)" },
+      "key": "email",
+      "type": "string",
+      "label": { "en": "E-mail of the app account", "fr": "E-mail du compte de l'application" },
+      "placeholder": { "en": "you@example.com", "fr": "vous@exemple.fr" },
+      "required": true
+    },
+    {
+      "key": "password",
+      "type": "secret",
+      "label": { "en": "Password of the app account", "fr": "Mot de passe du compte" },
+      "required": true
+    },
+    {
+      "key": "language",
+      "type": "select",
+      "label": { "en": "Language of the stove texts", "fr": "Langue des textes du poêle" },
       "description": {
-        "en": "How often sensors are polled, in seconds (one minute minimum).",
-        "fr": "Fréquence d'interrogation des capteurs, en secondes (une minute minimum)."
+        "en": "Names of the features, state and alarm texts.",
+        "fr": "Noms des fonctions, textes de l'état et des alarmes."
       },
       "required": false,
-      "default": 300,
+      "default": "fr",
+      "options": [
+        { "value": "fr", "label": { "en": "French", "fr": "Français" } },
+        { "value": "en", "label": { "en": "English", "fr": "Anglais" } }
+      ]
+    },
+    {
+      "key": "refresh_interval",
+      "type": "number",
+      "label": { "en": "Refresh interval (s)", "fr": "Intervalle de lecture (s)" },
+      "description": {
+        "en": "How often each stove is read, between 60 and 3600 seconds. Every reading wakes the stove through the cloud: keep it reasonable.",
+        "fr": "Fréquence de lecture de chaque poêle, entre 60 et 3600 secondes. Chaque lecture interroge le poêle via le cloud : restez raisonnable."
+      },
+      "required": false,
+      "default": 60,
       "min": 60,
       "max": 3600
     }
   ],
   "actions": [
     {
-      "key": "test_weather",
-      "label": { "en": "Test the weather provider", "fr": "Tester le fournisseur météo" },
-      "timeout_seconds": 30
-    },
-    {
-      "key": "identify",
-      "label": { "en": "Identify a device", "fr": "Identifier un appareil" },
-      "fields": [
-        {
-          "key": "device",
-          "type": "select",
-          "source": "devices",
-          "label": { "en": "Device", "fr": "Appareil" },
-          "required": true
-        }
-      ]
+      "key": "test_connection",
+      "label": { "en": "Test the connection", "fr": "Tester la connexion" },
+      "timeout_seconds": 60
     }
   ],
   "scene_triggers": [
     {
-      "key": "motion_detected",
-      "label": { "en": "Motion detected", "fr": "Mouvement détecté" },
+      "key": "stove_alarm",
+      "label": { "en": "Stove alarm", "fr": "Alarme du poêle" },
       "description": {
-        "en": "A demo motion sensor saw a person or an animal move.",
-        "fr": "Un détecteur de démonstration a vu bouger une personne ou un animal."
+        "en": "A stove goes into alarm (ignition failed, no pellets, smoke too hot…). Checked at every reading.",
+        "fr": "Un poêle passe en alarme (allumage raté, plus de granulés, fumées trop chaudes…). Vérifié à chaque lecture."
       },
       "fields": [
         {
-          "key": "device",
+          "key": "stove",
           "type": "select",
           "source": "devices",
-          "label": { "en": "Sensor", "fr": "Détecteur" }
-        },
-        {
-          "key": "target",
-          "type": "multi_select",
-          "label": { "en": "What moved", "fr": "Ce qui a bougé" },
-          "options": [
-            { "value": "person", "label": { "en": "Person", "fr": "Personne" } },
-            { "value": "animal", "label": { "en": "Animal", "fr": "Animal" } }
-          ]
+          "label": { "en": "Stove", "fr": "Poêle" },
+          "description": {
+            "en": "Leave empty for any stove.",
+            "fr": "Laissez vide pour tous les poêles."
+          },
+          "required": false
         }
       ],
       "variables": [
+        { "key": "stove_name", "type": "string", "label": { "en": "Stove", "fr": "Poêle" } },
         {
-          "key": "target",
+          "key": "alarm_code",
+          "type": "number",
+          "label": { "en": "Alarm code", "fr": "Code de l'alarme" }
+        },
+        {
+          "key": "alarm_label",
           "type": "string",
-          "label": { "en": "What moved", "fr": "Ce qui a bougé" }
+          "label": { "en": "Alarm", "fr": "Alarme" }
+        },
+        { "key": "status", "type": "string", "label": { "en": "State", "fr": "État" } },
+        {
+          "key": "summary",
+          "type": "string",
+          "label": { "en": "Ready-to-send sentence", "fr": "Phrase prête à envoyer" }
         }
       ]
-    }
-  ],
-  "scene_actions": [
-    {
-      "key": "identify_device",
-      "label": { "en": "Identify a device", "fr": "Identifier un appareil" },
-      "description": {
-        "en": "Make a device signal itself (the demo light blinks).",
-        "fr": "Fait se signaler un appareil (la lampe de démonstration clignote)."
-      },
-      "timeout_seconds": 15,
-      "fields": [
-        {
-          "key": "device",
-          "type": "select",
-          "source": "devices",
-          "label": { "en": "Device", "fr": "Appareil" },
-          "required": true
-        }
-      ],
-      "outputs": [
-        {
-          "key": "signalled",
-          "type": "boolean",
-          "label": { "en": "Device signalled", "fr": "Appareil signalé" }
-        }
-      ]
-    }
-  ],
-  "widgets": [
-    {
-      "key": "demo_status",
-      "label": { "en": "Demo status", "fr": "État de la démo" },
-      "description": {
-        "en": "Live temperature and plug power, plug connection and observed location.",
-        "fr": "Température et puissance en direct, connexion de la prise, position observée."
-      },
-      "icon": "activity",
-      "action_timeout_seconds": 15
     }
   ]
 }

@@ -1,67 +1,117 @@
-# Template de démonstration
+# Micronova Agua IOT (poêles à granulés)
 
-Ceci est la documentation utilisateur de l'intégration. Gladys ré-héberge ce
-fichier et affiche un lien **Documentation** permanent vers lui dans l'écran
-de configuration (dans la langue de l'utilisateur, avec l'anglais en repli) —
-c'est au moment de configurer que l'utilisateur en a le plus besoin. Gardez
-les courtes indications d'accueil dans les blocs `section` du `config_schema`
-du manifest ; mettez ici le pas-à-pas détaillé (captures d'écran, dépannage…).
+De nombreux fabricants de poêles et de chaudières à granulés équipent leurs
+appareils d'un module Wi-Fi **Micronova** et les font piloter par **leur
+propre application**, toutes bâties sur le même cloud **Agua IOT**. Cette
+intégration se connecte à ce cloud avec le compte de votre application, comme
+le fait l'application, et amène vos poêles dans Gladys : les allumer et les
+éteindre, régler la température et la puissance, suivre les températures,
+l'état et les alarmes, et réagir à une alarme dans une scène.
+
+**Non officielle** : sans lien avec Micronova ni avec les fabricants.
+
+> **Version de développement (0.1).** Portée de l'intégration Home Assistant
+> utilisée par de nombreux propriétaires, et testée sur les cartes de
+> registres enregistrées de sept vrais poêles, pas encore sur toutes les
+> marques. Vos retours sont les bienvenus sur le dépôt GitHub.
+
+## Applications compatibles
+
+Choisissez, dans la configuration, l'application que vous utilisez sur votre
+téléphone :
+
+Alfaplam · APP-O BIOEN (Unical) · Boreal Home · Bronpi Home · Darwin
+Evolution (Cola) · Easy Connect, Easy Connect Plus et Easy Connect Poêle
+(MCZ) · Elcofire Pellet Home · Elfire Wifi · EOSS Wifi (Solartecnik) ·
+EvaCalòr – PuntoFuoco · Fontana Forni · Fonte Flamme contrôle 1 · Globe-fire
+· GO HEAT (AMG) · Jolly Mec Wi-Fi · Karmek Wifi · Klover Home · LAMINOX Remote
+Control 2.0 · Lorflam Home · Moretti design · My Corisit · MyPiazzetta ·
+MySuperior · Nina (Micronova) · Nobis-Fi · Nordic Fire 2.0 · Ravelli Wi-Fi ·
+Stufe a pellet Italia · Thermoflux · Total Control 3.0 (Extraflame) · TS Smart
+(Tim Sistem) · TurboFonte (MCZ) · Wi-Phire (Linea VZ).
+
+**Non compatibles** (autre plateforme) : Ravelli Smart Wi-Fi, Total Control
+1.x et 2.0. Les poêles Palazzetti ont leur propre intégration
+Gladys.
 
 ## Ce que vous obtenez
 
-Six appareils de démonstration apparaissent après l'installation : une
-station météo (vraies données Open-Meteo), un interrupteur, une lampe
-variable, une prise connectée avec mesure de puissance, un détecteur de
-mouvement et une caméra.
+Un appareil Gladys par poêle du compte, avec les fonctions que le poêle
+possède :
 
-## Configuration
+| Fonction                           | Dans Gladys                                                                         |
+| ---------------------------------- | ----------------------------------------------------------------------------------- |
+| Marche/arrêt                       | mode du thermostat : arrêt / marche                                                 |
+| Consigne                           | consigne du thermostat (air ambiant), avec les bornes et le pas du poêle            |
+| Consigne de l'eau                  | consigne du thermostat pour l'eau (poêles hydro, chaudières)                        |
+| Chauffe                            | état de fonctionnement : le poêle produit de la chaleur (allumage, travail…) ou non |
+| Températures ambiante, eau, fumées | capteurs de température (°C)                                                        |
+| État                               | texte : éteint, allumage, chauffe, nettoyage, veille, extinction, alarme…           |
+| Alarme                             | capteur binaire : 1 tant que le poêle est en alarme                                 |
+| Puissance                          | un choix parmi les niveaux de puissance du poêle (1 à 5 pour la plupart)            |
 
-1. Ouvrez l'onglet **Configuration** de l'intégration.
-2. Renseignez la **latitude** et la **longitude** que la station météo de
-   démonstration doit observer (Paris par défaut), et choisissez votre unité
-   de température. L'**intervalle de rafraîchissement** règle la fréquence
-   de lecture de la station météo et de la puissance de la prise : toutes
-   les 5 minutes par défaut, toutes les minutes au plus.
-3. Enregistrez : les appareils apparaissent dans l'onglet **Découverte**,
-   prêts à être ajoutés.
+L'état se lit comme « Chauffe (TRAVAIL) » : la phase d'abord, la même pour
+tous les poêles, puis le texte du poêle lui-même dans votre langue quand il en
+a un.
 
-Le réglage **Préférer la connexion locale** pilote la prise de
-démonstration : elle affiche en badge le canal réellement utilisé (local ou
-cloud), avec un point orange quand elle fonctionne en mode dégradé (local
-refusé, bascule cloud).
+## Installation
 
-## Actions
+1. Vérifiez que votre poêle fonctionne dans l'application du fabricant sur
+   votre téléphone.
+2. Dans la configuration de l'intégration, choisissez **l'application de votre
+   poêle**, puis saisissez l'**e-mail** et le **mot de passe** de son compte.
+3. Cliquez sur **Tester la connexion** : les poêles du compte s'affichent.
+4. Ouvrez l'onglet **Découverte** et ajoutez vos poêles.
 
-- **Tester le fournisseur météo** — effectue une requête en direct vers
-  Open-Meteo et affiche la température et l'humidité actuelles sous le
-  bouton.
-- **Identifier un appareil** — choisissez un de vos appareils dans la liste
-  et il se signale (la lampe de démonstration « clignote » dans les logs).
+## Options
+
+| Option                     | Par défaut | Rôle                                                                                          |
+| -------------------------- | ---------- | --------------------------------------------------------------------------------------------- |
+| Langue des textes du poêle | Français   | noms des fonctions, textes de l'état et des alarmes                                           |
+| Intervalle de lecture      | 60 s       | fréquence de lecture de chaque poêle (60 à 3600 s) : chaque lecture le sollicite via le cloud |
 
 ## Scènes
 
-L'intégration ajoute ses propres cartes à l'éditeur de scènes (Gladys 5.1
-ou plus récent), dans la catégorie **Intégrations** :
+Le déclencheur **Alarme du poêle** se déclenche quand un poêle passe en alarme
+(allumage raté, plus de granulés, fumées trop chaudes…), une fois par alarme.
+Laissez le poêle vide pour les surveiller tous. La scène reçoit le nom du
+poêle, le code et le texte de l'alarme, l'état et une phrase prête à envoyer,
+par exemple « Poêle séjour : alarme du poêle (E4) » pour une notification.
 
-- **Mouvement détecté** (déclencheur) — lance la scène quand un détecteur
-  de démonstration voit bouger quelque chose. Choisissez éventuellement le
-  détecteur et ce qui a bougé (personne, animal) ; laissés vides, toute
-  détection correspond. Les actions suivantes peuvent lire ce qui a bougé
-  avec `{{triggerEvent.data.target}}`.
-- **Identifier un appareil** (action) — fait se signaler l'appareil choisi.
-  Elle indique si l'appareil a pu se signaler, pour que les actions
-  suivantes puissent en dépendre.
+Les fonctions s'utilisent dans les scènes comme n'importe quel appareil :
+allumer le poêle à 6 h 30, baisser la consigne en partant, tester la
+température ambiante dans une condition…
 
-## Tableau de bord
+## Fonctionnement
 
-Ajoutez le widget **État de la démo** à un tableau de bord : il affiche en
-direct la température de la station météo et la puissance de la prise du
-bureau, la connexion utilisée par la prise (en orange si dégradée) et la
-position observée. Son bouton **Identifier la lampe** fait se signaler la
-lampe de démonstration.
+- Gladys dialogue avec le cloud de votre application par Internet, jamais
+  directement avec le poêle : le poêle doit être en ligne dans l'application.
+- L'e-mail et le mot de passe restent dans la configuration de Gladys (le mot
+  de passe est un champ secret) et ne sont envoyés qu'au cloud de
+  l'application choisie.
+- Une commande (marche/arrêt, consigne, puissance) est une tâche que le cloud
+  transmet au poêle : Gladys affiche la nouvelle valeur tout de suite, et
+  relit le poêle quelques secondes plus tard pour la confirmer.
+- Une connexion refusée est retentée au bout de 15 minutes, ou dès que vous
+  enregistrez la configuration.
 
 ## Dépannage
 
-L'intégration journalise tout ce qu'elle fait : consultez les logs de
-l'intégration depuis l'interface Gladys (ou `docker logs` sur l'hôte) avec
-`LOG_LEVEL=debug` pour le détail complet.
+- **« a refusé l'e-mail ou le mot de passe »** : vérifiez-les dans
+  l'application, et que vous avez choisi celle que vous utilisez vraiment
+  (chaque application a son propre cloud et ses propres comptes).
+- **Aucun poêle** : le compte n'a pas de poêle, ou le poêle a été ajouté avec
+  un autre compte. Connectez-vous à l'application avec le même e-mail.
+- **Un poêle injoignable** : le cloud n'a pas pu le lire (poêle débranché,
+  module Wi-Fi hors ligne) : vérifiez dans l'application.
+- **Pas de température ambiante** : certains poêles utilisent la sonde
+  d'ambiance pour un contact de thermostat externe : la valeur n'est alors pas
+  une température et elle est ignorée.
+
+## Remerciements
+
+Portée de l'intégration Home Assistant
+[home_assistant_micronova_agua_iot](https://github.com/vincentwolsink/home_assistant_micronova_agua_iot)
+de Vincent Wolsink et ses contributeurs, basée sur
+[py-agua-iot](https://github.com/fredericvl/py-agua-iot) de Frederic Van
+Linthoudt (licence Apache 2.0).

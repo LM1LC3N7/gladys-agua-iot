@@ -1,0 +1,22 @@
+gladys-agua-iot
+Copyright 2026 LM1LC3N7 and the gladys-agua-iot contributors
+
+This product is licensed under the Apache License, Version 2.0.
+
+It includes work ported from:
+
+- home_assistant_micronova_agua_iot
+  https://github.com/vincentwolsink/home_assistant_micronova_agua_iot
+  Copyright Vincent Wolsink and contributors, Apache License, Version 2.0.
+  The Agua IOT cloud protocol, the list of the vendor apps (const.py), the
+  logic of the stove registers, and the register maps of the test fixtures
+  (test/fixtures/stoves, trimmed).
+
+- py-agua-iot
+  https://github.com/fredericvl/py-agua-iot
+  Copyright Frederic Van Linthoudt, Apache License, Version 2.0.
+  The library the code above is based on.
+
+Micronova, Agua IOT and the names of the stove makers and of their apps are
+trademarks of their respective owners. This project is not affiliated with,
+endorsed by or sponsored by Micronova or any stove maker.
