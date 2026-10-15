@@ -1,6 +1,6 @@
 {
   "name": "gladys-agua-iot",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "description": "Gladys Assistant external integration for the pellet stoves of the Micronova Agua IOT cloud. Unofficial, not affiliated with Micronova.",
   "type": "module",

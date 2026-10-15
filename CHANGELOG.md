@@ -10,6 +10,8 @@ the notes of the version's GitHub Release.
 
 ## [Unreleased]
 
+## [0.1.1] - 2026-10-15
+
 ### Added
 
 - Login to the Agua IOT cloud of the 35 vendor apps of the Home Assistant
@@ -33,4 +35,5 @@ the notes of the version's GitHub Release.
 - Cloud transport badge per stove (unreachable when it cannot be read).
 - "Test the connection" button.
 
-[Unreleased]: https://github.com/LM1LC3N7/gladys-agua-iot/commits/main
+[Unreleased]: https://github.com/LM1LC3N7/gladys-agua-iot/compare/v0.1.1...HEAD
+[0.1.1]: https://github.com/LM1LC3N7/gladys-agua-iot/releases/tag/v0.1.1
