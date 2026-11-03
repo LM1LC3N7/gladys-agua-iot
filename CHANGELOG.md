@@ -12,6 +12,7 @@ the notes of the version's GitHub Release.
 
 ### Changed
 
+- Integration SDK 0.16 (no change for the devices).
 - README: the store install note replaces the work-in-progress notice, and the
   Releasing section no longer says the store topic is still to be added.
 

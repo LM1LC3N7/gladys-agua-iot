@@ -43,6 +43,10 @@ No dedicated topic for this integration. Once the 10 integrations claimed on
 
 ## Decisions
 
+- **SDK `^0.16.0`** (2026-11-03, migration wave 5): it adds the ai, tts and
+  music types; no effect here (`poll_frequency` unused, the devices carry
+  `should_poll: false`). `keywords`, `countries` and
+  `gladys_version >= 5.3.0` wait until Gladys 5.3 is widespread.
 - Same feature model as the Palazzetti integration of the store (thermostat
   mode = on/off, operating state, text status, unknown/binary alarm,
   text/select power), so every pellet stove looks alike in Gladys.
