@@ -8,7 +8,7 @@ already taken and the next milestones.
 
 A Gladys Assistant **external integration** of type `device`: a Node.js
 service (Node 22+, ESM, no build step) in its own sandboxed Docker container,
-talking to Gladys through `@gladysassistant/integration-sdk` (v0.15), its
+talking to Gladys through `@gladysassistant/integration-sdk` (v0.16), its
 only runtime dependency (HTTP is Node's `fetch`). It logs in to the
 **Micronova Agua IOT** cloud of the vendor app the user chose, and turns the
 pellet stoves of the account into Gladys devices, states, commands and a
